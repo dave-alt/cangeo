@@ -1,11 +1,8 @@
 {
-  "name": "react",
+  "name": "dave-branch",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
+  "description": "",
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "jotai": "1.6.1",
