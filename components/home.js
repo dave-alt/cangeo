@@ -9,21 +9,6 @@ export default function home() {
   
   return (
     <>
-      <div className="navContainer">
-        <div className="logoContainer">
-          <a className="logoLink" href="#heroSection">
-            <img style={{ height: "30px" }} src="cangeo.svg" alt="cangeo" />
-          </a>
-        </div>
-        <nav className="navLinksContainer">
-          <a href="/#heroSection">Home </a>
-          <a href="#about">About </a>
-          <a href="#services">Services </a>
-          <a href="#contact">Contact </a>
-          
-        </nav>
-      </div>
-
       <div id="heroSection" className="hero">
       <video id="#video" muted
   autoPlay={"autoplay"}
