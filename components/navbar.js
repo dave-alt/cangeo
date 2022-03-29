@@ -1,23 +1,38 @@
-import React from 'react'
-import Link from 'next/link'
+import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function navbar() {
+  const router = useRouter();
   return (
     <>
-         <div className="navContainer">
+      <div className="navContainer">
         <div className="logoContainer">
-          <Link className="logoLink" href="/#heroSection">
-            <img style={{ height: "30px" }} src="cangeo.svg" alt="cangeo" />
+          <Link href="/#heroSection" passHref>
+            <a className="logoLink">
+              <img style={{ height: "30px" }} src="cangeo.svg" alt="cangeo" />
+            </a>
           </Link>
         </div>
         <nav className="navLinksContainer">
-          <Link href="/#heroSection">Home </Link>
-          <Link href="/about">About </Link>
-          <Link href="/pricing">Pricing </Link>
-          <Link href="/#contact">Contact </Link>
-          
+          <Link passHref href="/#heroSection">
+            <a isactive={router.asPath == "/#heroSection" ? "active" : ""}>Home</a>
+          </Link>
+          <Link passHref href="/about">
+            <a isactive={router.pathname == "/about" ? "active" : ""}>About</a>
+          </Link>
+          <Link passHref href="/pricing">
+            <a isactive={router.pathname == "/pricing" ? "active" : ""}>
+              Pricing
+            </a>
+          </Link>
+          <Link passHref href="/#contact">
+            <a isactive={router.asPath == "/#contact" ? "active" : ""}>
+              Contact
+            </a>
+          </Link>
         </nav>
       </div>
     </>
-  )
+  );
 }
