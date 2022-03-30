@@ -16,7 +16,6 @@
     "react-hook-form": "^7.28.1",
     "react-hook-form-resolvers": "^0.0.1",
     "react-icons": "^4.3.1",
-    "react-moment": "^1.1.1",
     "react-phone-input-2": "^2.15.0",
     "react-pricing-table": "^0.3.0"
   },
