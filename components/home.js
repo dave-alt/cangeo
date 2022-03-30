@@ -1,19 +1,19 @@
 import React from "react";
-import {useEffect} from "react"
-export default function home() {
-  useEffect(() => {
-    
-  
-    
-  }, [])
-  
+import { useEffect } from "react";
+import Technologies from "../components/technologies";
+export default function Home() {
+  useEffect(() => {}, []);
+
   return (
     <>
       <div id="heroSection" className="hero">
-      <video id="#video" muted
-  autoPlay={"autoplay"}
- 
-  loop src="./video.webm"/>
+        <video
+          id="#video"
+          muted
+          autoPlay={"autoplay"}
+          loop
+          src="./video.webm"
+        />
         <div className="getQuote">
           <h1>Its hard to find things that won't sell online!</h1>
           <a href="#contact">
@@ -21,25 +21,6 @@ export default function home() {
           </a>
         </div>
       </div>
-
-      <div id="about" className="about">
-        <h1 className="about_heading">About Us</h1>
-        <div className="aboutContent">
-          <img src="./about.svg" alt="about image" className="about_image" />
-          <p>
-            <b>Cangeo</b> is a Tech firm located in Canada.
-            <br />
-            <br />
-            We specialize in providing digital marketing solutions to your
-            business needs.
-            <br />
-            <br />
-            Its crucial to add status-quo marketing technologies in your
-            toolbelt. Cangeo takes care of it.
-          </p>
-        </div>
-      </div>
-
       <div id="services" className="services">
         <h1>Our services</h1>
         <div className="cardsContainer">
@@ -49,8 +30,7 @@ export default function home() {
             </div>
             <div className="tsf">Digital Marketing</div>
           </div>
-         
-         
+
           <div className="card-container">
             <div className="assetContainer">
               <img src="./ux.svg" alt="" />
@@ -81,8 +61,40 @@ export default function home() {
             </div>
             <div className="tsf">Medical Coding</div>
           </div>
-          
-         
+        </div>
+      </div>
+      <div  className="technologies">
+        <h1 className="about_heading">Technologies</h1>
+        <Technologies/>
+      </div>
+     
+      <div id="about" className="about">
+        <div className="aboutContent">
+          <h1 className="about_heading">About Us</h1>
+          <p>
+            <b>Cangeo</b> is a Tech firm located in Canada.
+            <br />
+            <br />
+            We specialize in providing digital marketing solutions to your
+            business needs.
+            <br />
+            <br />
+            Its crucial to add status-quo marketing technologies in your
+            toolbelt. Cangeo takes care of it.
+            <br />
+            <br />
+            We are committed to build best products by following an{" "}
+            <b>User Centered Design</b> approach. We start right from
+            wireframing, and then finalise the product design by various
+            iterations which involves improvements. A modern product should be{" "}
+            <b>Accessible, Reliable , Usable and Enjoyable</b>.
+            <br />
+            <br />
+            We are equipped with server-side rendering technologies so that we
+            can assure that all your products are <b> Search-engine ready</b>.
+            We provide valuable customer support and would love to embark in a
+            long-term relationships.
+          </p>
         </div>
       </div>
     </>

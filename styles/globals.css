@@ -141,7 +141,7 @@ a[isactive="active"]{
 }
 /* ********Navbar End*********** */
 
-.hero,.about{  
+.hero{  
     padding-top:55px;
     width:100%;
     height:100vh;
@@ -212,36 +212,78 @@ a[isactive="active"]{
 /* *******************Hero end*********** */
 
 /* *******************About start*********** */
+.about{  
+    padding:20px 10px;
+    width:100%;
+    /* height:100vh; */
+    /* background:#fff3f3; */
+}
 .aboutContent{
     /* background:green; */
-    max-width: 100%;
-    min-height:80%;
+    /* max-width: 100%; */
+    /* min-height:80%; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: space-around;
-    justify-items: space-around;
+
 }
 .about_heading {
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
-.aboutContent img{
-    max-width:70%;
-}
+
 .aboutContent p{
-    
-    padding-left: 10%;
-    padding-right: 10%;
+    background-color: #fff;
+    padding: 20px;
     line-height:28px;
-    
+    border-radius:16px;
+     box-shadow: 0px 2px 4px rgba(100,100,100,0.5);
 }
 
 /* *******************About end*********** */
-
+/* *******************Technologies start*********** */
+.tech-cards-container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.tech-wrapper{
+    margin:10px;
+    background-color:white;
+    border-radius:200px;
+    width:max-content;
+    min-height:50px;
+   display:grid;
+   grid-template-columns:45px auto;
+    overflow:hidden;
+    align-items:center;
+    box-shadow: 0px 2px 4px rgba(100,100,100,0.5);
+    transition:0.3s ease all;
+}
+.tech-wrapper:hover{
+    transform:scale(1.1);
+}
+.tech-image{
+    overflow:hidden;
+    width:45px;
+    margin:5px;
+    height:45px;
+    border-radius:100px;
+    /* background:grey; */
+}
+.tech-image img{
+    height:100%;
+}
+.tech-name{
+    
+    margin:10px;
+    text-align:center;
+}
+/* *******************Technologies end*********** */
 /* *******************Services start*********** */
 
 .services h1{
@@ -363,7 +405,7 @@ form .btn{
 /******Pricing Start*******/
 
 .pricing{
-    margin-top:75px;
+    margin-top:50px;
 }
 
 /******Pricing End*******/
@@ -379,11 +421,39 @@ form .btn{
 }
 
 /******Skyline end*******/
+/******Footer Start*******/
+.footer{
+    padding:20px;
+    background-color: #2b2d42;
+    text-align:center;
+    /* min-height:150px; */
+    height:210px;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+.socials{
+    width:50%;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+}
+/******Footer End*******/
 
 
 
 /* *******************Media queries************** */
 @media only screen and (min-width:913px){
+    .socials{
+        width:20%;
+    }
+    .footer{
+        height:150px;
+        flex-direction:row;
+        
+    }
     .navContainer{
         grid-template-columns: 1fr 0.5fr;
     }
@@ -398,25 +468,21 @@ form .btn{
     .hero{
         grid-auto-flow: column;
     }
-    .aboutContent{
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
+
     .about_heading {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.aboutContent img{
-    max-width: 30%;
-}
+
 .aboutContent p{
     min-width :200px;
-    max-width: 600px;
-   padding:0;
+    max-width: 900px;
+   
+    padding: 20px;
     /* padding-right: 10%; */
     line-height:28px;
+    /* align-self: flex-start; */
     
 }
 .getQuote .btn{
