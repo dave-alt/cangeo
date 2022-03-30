@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </div>
       <div  className="technologies">
-        <h1 className="about_heading">Technologies</h1>
+        <h1 className="about_heading">Technologies We Use</h1>
         <Technologies/>
       </div>
      

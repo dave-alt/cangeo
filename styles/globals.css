@@ -90,7 +90,9 @@ p{
     display:flex;
     align-items: center;
 }
-
+.logoLink img{
+    height: 30px;
+}
 .navLinksContainer{
     display:flex;
     justify-content: space-around;
@@ -214,6 +216,7 @@ a[isactive="active"]{
 /* *******************About start*********** */
 .about{  
     padding:20px 10px;
+    padding-top:55px;
     width:100%;
     /* height:100vh; */
     /* background:#fff3f3; */
@@ -245,6 +248,9 @@ a[isactive="active"]{
 
 /* *******************About end*********** */
 /* *******************Technologies start*********** */
+.technologies{
+    padding-top:55px;
+}
 .tech-cards-container{
     display:flex;
     justify-content: center;
@@ -443,9 +449,138 @@ form .btn{
 /******Footer End*******/
 
 
+/******The Big About Page Start*******/
+iframe{
+    width:600;
+    height:450 ;
+    border:5px solid rgba(255, 255, 255, 0.664);
+    border-radius:12px;
+}
+.theAbout{
+    padding-top:75px;
+    
+    text-align:center;
+    
+}
+.pitch-cards-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+h2{
+    padding:15px;
+    
+    font-weight:400;
+    font-size:20px;
+    color:#474f88;
+}
+.pitch-card{
+    background-color:white;
+    width:300px;
+    border-radius:16px;
+    box-shadow: 0px 2px 4px rgba(100,100,100,0.5);
+    margin:15px;
+    transition:0.3s ease all;
+}
+.pitch-card:hover{
+    transform:scale(1.1);
+}
+.pitch-card p{
+    text-align:left;
+    font-size:14px;
+    padding: 20px;
+    color:#242530;
+    padding-top:0;
+}
+
+
+.card-container2 { 
+    margin: 10px;
+    width: 300px;
+    min-height: 200px;
+    border-radius: 16px;
+    background: #ffffff;
+    background-blend-mode: normal;
+    transition:0.4s ease all;
+    box-shadow: 0px 2px 4px rgba(100,100,100,0.5);
+}
+
+.card-container2:hover{
+    transform:scale(1.03);
+}
+
+  .assetContainer2  {
+    position: relative;
+overflow:hidden;
+    /* left: 16px; */
+    top: 16px;
+    width: 100%;;
+    height: 144px;
+    
+    /* background: #000000; */
+    background-blend-mode: normal;
+  }
+  .assetContainer2 img{
+      width: 100%;
+  }
+  
+  .tsf2 {
+    position: relative;
+    left: 0px;
+    top:24px;
+    width: 100%;
+    height: 24px;
+    font-size: 16px;
+    color:#2d3236;
+    font-weight: 500;
+    line-height: 24px;
+    text-align:left;
+    padding-left:20px;
+  }
+  .proj-desc{
+      text-align:left;
+      
+      padding-bottom:20px;
+      font-size:13px;
+      color:#363636;
+      position:relative;
+      top:10px;
+    margin:20px;
+      min-height:calc(max-content+50px);
+  }
+
+.projects-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.utility-h1{
+    padding-top:55px;
+    padding-bottom:15px;
+}
+/******The Big About Page End*******/
+
+
 
 /* *******************Media queries************** */
 @media only screen and (min-width:913px){
+    .tsf2{
+        font-size:12px;
+    }
+    .proj-desc{
+        font-size:12px;
+    }
+    .card-container2{
+        width:220px;
+    }
+    .projects-container{
+        flex-direction:row;
+        align-items: space-evenly;
+        justify-content:space-evenly;
+    }
     .socials{
         width:20%;
     }
@@ -473,6 +608,12 @@ form .btn{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.pitch-cards-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
 }
 
 .aboutContent p{

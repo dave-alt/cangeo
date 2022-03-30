@@ -10,7 +10,7 @@ export default function navbar() {
         <div className="logoContainer">
           <Link href="/#heroSection" passHref>
             <a className="logoLink">
-              <img style={{ height: "30px" }} src="cangeo.svg" alt="cangeo" />
+              <img src="cangeo.svg" alt="cangeo" />
             </a>
           </Link>
         </div>
