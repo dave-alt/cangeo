@@ -5,6 +5,7 @@ import Home from "../components/home";
 import Form from "../components/form";
 import Skyline from "../components/skyline";
 import Footer from "../components/footer";
+import Formfeedback from "../components/formfeedback";
 
 export default function Index() {
   return (
@@ -12,7 +13,7 @@ export default function Index() {
       <Navbar />
       <Home />
       <Form />
-      <Skyline />
+      <Formfeedback/>
       <Footer/>
     </>
   );

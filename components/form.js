@@ -6,6 +6,8 @@ import axios from "axios";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
+
+
 export default function Form() {
   const {
     register,
@@ -17,10 +19,18 @@ export default function Form() {
   });
 
   const onSubmit = (data) => {
-    console.log(data);
+    // console.log(data);
     axios
       .post("https://cangeo.herokuapp.com/api/v1/lead/create", data)
-      .then((res) => console.log(res))
+      .then((res) =>{
+        if(res.status ===200)
+        {
+          document.querySelector('.feedcon').style.display="flex";
+          setTimeout(() =>{
+            document.querySelector('.feedcon').style.display="none";
+          },1000)
+        }
+      })
       .catch((err) => console.log(err));
   };
 

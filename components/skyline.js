@@ -31,7 +31,7 @@ export default function footer() {
     
 
   return (
-    <svg width="100%" className="skyline" viewBox="0 0 400 76">
+    <svg  width="100%" className="skyline" viewBox="0 0 400 76">
     <path fill="#010B13" d="M0 0H400V76H0z"></path>
     <path
       fill="#D3D3D3"

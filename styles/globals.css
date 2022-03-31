@@ -121,6 +121,7 @@ a[isactive="active"]{
 }
 .navContainer{
     padding-left: 20px;
+    overflow:hidden;
     padding-right: 20px;
     grid-template-columns: 0.5fr 1fr;
     width:100vw;
@@ -130,6 +131,7 @@ a[isactive="active"]{
     position: fixed;
     top:0;
     z-index:99;
+    border-radius:0px 0px 32px 32px;
     box-shadow: 0px 0px 6px 0px rgba(45, 50, 54, 0.068); 
 }
 
@@ -144,7 +146,7 @@ a[isactive="active"]{
 /* ********Navbar End*********** */
 
 .hero{  
-    padding-top:55px;
+    /* padding-top:55px; */
     width:100%;
     height:100vh;
     /* background:#fff3f3; */
@@ -256,6 +258,7 @@ a[isactive="active"]{
     justify-content: center;
     align-items:center;
     flex-wrap:wrap;
+   
 }
 .tech-wrapper{
     margin:10px;
@@ -407,6 +410,24 @@ form .btn{
     /* position:relative; */
     /* left:0px; */
 }
+
+.form-feedback{
+    text-align: center;
+    border-radius:16px;
+    width: max-content;
+    box-shadow: 0px 2px 4px rgba(100,100,100,0.5);
+    color:rgb(13, 197, 13);
+    font-size:13px;
+    padding:10px 20px;
+    background-color:white;
+}
+.feedcon{
+    
+    display:none;
+    width:100%;
+    justify-content:center;
+    padding-bottom:20px;
+}
 /******Contact end*******/
 /******Pricing Start*******/
 
@@ -418,12 +439,20 @@ form .btn{
 
 
 /******Skyline end*******/
-
+.backgroundfiller{
+    width:100vw;
+    height:100vh;
+    background:#010B13;
+    display:flex;
+    align-items:flex-end;
+    
+}
 .skyline {
+    
     margin:0;
     padding:0;
-    position:relative;
-    bottom:-10px;
+    
+    
 }
 
 /******Skyline end*******/
@@ -567,6 +596,12 @@ overflow:hidden;
 
 /* *******************Media queries************** */
 @media only screen and (min-width:913px){
+
+    .tech-cards-container{
+        padding-left: 20%;
+        padding-right:20%;
+    }
+
     .tsf2{
         font-size:12px;
     }

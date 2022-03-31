@@ -121,7 +121,7 @@ export default function about() {
           ></iframe>
         </div>
       </div>
-      <Skyline />
+     
       <Footer />
     </>
   );

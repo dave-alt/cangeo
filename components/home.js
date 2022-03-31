@@ -1,19 +1,24 @@
 import React from "react";
 import { useEffect } from "react";
 import Technologies from "../components/technologies";
+import Skyline from "../components/skyline";
+
 export default function Home() {
   useEffect(() => {}, []);
 
   return (
     <>
       <div id="heroSection" className="hero">
-        <video
+        {/* <video
           id="#video"
           muted
           autoPlay={"autoplay"}
           loop
           src="./video.webm"
-        />
+        /> */}
+        <div className="backgroundfiller">
+        <Skyline />
+        </div>
         <div className="getQuote">
           <h1>Its hard to find things that won't sell online!</h1>
           <a href="#contact">

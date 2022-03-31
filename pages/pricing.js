@@ -111,7 +111,7 @@ export default function Pricing() {
           </PricingSlot>
         </PricingTable>
       </div>
-      <Skyline />
+      
       <Footer/>
     </>
   );
