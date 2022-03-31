@@ -429,6 +429,50 @@ form .btn{
     padding-bottom:20px;
 }
 /******Contact end*******/
+/******Trustcard Start*******/
+.trustfactors{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items:center;
+}
+.trustcard-wrapper{
+    box-shadow: 0px 2px 4px rgba(100,100,100,0.5);
+    width:300px;
+    border-radius:12px;
+    background-color:white;
+    padding:20px;
+    margin:20px;
+    transition: 0.4s ease all;
+}
+.trustcard-wrapper:hover{
+    transform:scale(1.04);
+}
+.trustcard-heading{
+    font-size:17px;
+    padding-bottom:8px;
+    padding-top:8px;
+    
+}
+.trustcard-content{
+    font-size:15px;
+    
+}
+.lottie-animation-wrapper{
+    display:flex;
+    justify-content:center;
+width:100%;
+height:180px;
+/* background:green; */
+}
+.lottie-animation-wrapper img{
+    /* width:100%; */
+    height:100%;
+}
+
+
+/******Trustcard end*******/
 /******Pricing Start*******/
 
 .pricing{
@@ -596,6 +640,10 @@ overflow:hidden;
 
 /* *******************Media queries************** */
 @media only screen and (min-width:913px){
+
+    .trustfactors{
+        flex-direction:row;
+    }
 
     .tech-cards-container{
         padding-left: 20%;
