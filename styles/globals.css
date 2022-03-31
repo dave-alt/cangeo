@@ -1,8 +1,8 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 /* ===== Scrollbar CSS ===== */
   /* customize scrollbar css */
   *{
-      font-family: poppins;
+    font-family: 'Poppins', sans-serif;
   }
   b{
       font-weight:600;
@@ -71,7 +71,7 @@
 }
 
 html{
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 body{
@@ -174,7 +174,7 @@ a[isactive="active"]{
 }
 .getQuote .btn, form .btn{
     /* margin-top:80px; */
-    font-family:poppins;
+    font-family: 'Poppins', sans-serif;
     transition:all 0.3s ease-in-out;
     padding:10px 20px;
     cursor:pointer;
@@ -368,7 +368,7 @@ form input,.message{
     min-width: 300px;
     max-width:300px;
     text-align: center;
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
    border:1px solid #ccc;
    border-radius:4px;
    transition: 0.5s ease all;
