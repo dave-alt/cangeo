@@ -19,8 +19,8 @@ function Servicecard(props) {
           <p className="service-card-description">{props.description}</p>
           <h3>Our Skills</h3>
           <ul className="service-card-list">
-            {props.list.map((item) => (
-              <li>{item}</li>
+            {props.list.map((item,i) => (
+              <li key={i}>{item}</li>
             ))}
           </ul>
         </div>
