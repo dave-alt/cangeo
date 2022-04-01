@@ -17,7 +17,7 @@
     "react-hook-form-resolvers": "^0.0.1",
     "react-icons": "^4.3.1",
     "react-phone-input-2": "^2.15.0",
-    "react-pricing-table": "^0.3.0",
+    "react-pricing-table": "^0.3.0"
   },
   "devDependencies": {
     "eslint": "8.11.0",
