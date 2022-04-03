@@ -20,7 +20,7 @@ export default function Footer() {
        >info@cangeosolutions.ca
        <br/>
        
-       +15142269952
+       +1 514 226 9952
        </div>
        <div></div>
      </div>
@@ -32,7 +32,7 @@ export default function Footer() {
       <GrYoutube/>
      </div>
     </div>
-    <div className="copyright">© {new Date().getFullYear()} Copyright Cangeo Solutions Inc.</div>
+    <div className="copyright">© {new Date().getFullYear()} Copyright CANGEO Solutions Inc.</div>
     </>
   );
 }

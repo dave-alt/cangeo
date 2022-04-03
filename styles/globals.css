@@ -172,7 +172,7 @@ a[isactive="active"]{
     z-index:1;
     position:absolute;
     top:0;
-    height:100vh;
+    height:100%;
     width:100%;
     place-self: center;
     display: flex;
@@ -326,23 +326,30 @@ h3{
 .card-bg-image{    
     background-image:url("/ph.jpeg");
 }
+.ib{
+    background-color: #a3d6dc;
+}
 .ui{
-    background-image:url("/ui.jpeg");
+    /* background-image:url("/ui.jpeg"); */
+    background-color: #a3d6dc;
 }
 .vg{
-    background-image:url("/vg.jpeg");
+    /* background-image:url("/vg.jpeg"); */
+    
 }
 .dm{
-    background-image:url("/dm.jpeg");
+    /* background-image:url("/dm.jpeg"); */
 }
 .wd{
-    background-image:url("/wd.jpeg");
+    /* background-image:url("/wd.jpeg"); */
+    background-color: #a3d6dc;
 }
 .mc{
-    background-image:url("/mc.jpeg");
+    /* background-image:url("/mc.jpeg"); */
 }
 .de{
-    background-image:url("/de.jpeg");
+    /* background-image:url("/de.jpeg"); */
+    background-color: #a3d6dc;
 }
 .theServices{
     width:100%;
@@ -516,7 +523,10 @@ form .btn{
     display:none;
     width:100%;
     justify-content:center;
+    align-items: center;
     padding-bottom:20px;
+    padding-top:20px;
+    background-color: white;
 }
 /******Contact end*******/
 /******Trustcard Start*******/
@@ -615,7 +625,7 @@ height:180px;
 }
 .footer{
     padding:20px;
-    background-color: #2b2d42;
+    background-color: #198995;
     text-align:center;
     /* min-height:150px; */
     height:210px;
@@ -756,6 +766,7 @@ overflow:hidden;
 @media only screen and (min-width:913px){
     .contact{
         background-image:url("/contact.jpeg");
+        background-size: cover;
     }
     .getQuote{
 
@@ -767,6 +778,9 @@ overflow:hidden;
     .bigFlex{
         display:flex;
         
+    }
+    .zag{
+        flex-direction:row-reverse;
     }
     .flex-container{
         display:flex;
@@ -784,6 +798,9 @@ overflow:hidden;
         display:block;
         /* align-items:stretch; */
         margin-right:30px;
+    }
+    .service-card-description{
+        padding-right: 20px;
     }
     .image-for{
         

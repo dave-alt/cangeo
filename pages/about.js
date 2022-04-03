@@ -112,7 +112,7 @@ export default function about() {
           <p>Sam - UX/UI Designer</p>
         </div>
         <div className="Locate Cangeo">
-        <h1 className="utility-h1">Locate Cangeo</h1>
+        <h1 className="utility-h1">Locate CANGEO</h1>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.565726366069!2d-75.74542258444609!3d45.357577979099844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce06e4bf8d8e4f%3A0x48ba3a7564291890!2s47%20Starwood%20Rd%2C%20Nepean%2C%20ON%20K2G%201Y9%2C%20Canada!5e0!3m2!1sen!2sin!4v1648678085828!5m2!1sen!2sin"
             allowfullscreen=""
