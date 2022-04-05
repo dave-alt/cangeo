@@ -97,6 +97,11 @@ function Servicecard(props) {
                 <li key={i}>{item}</li>
               ))}
             </ul>
+            {props.app&&<div className="app">
+            <h3>Download our App for iOS and Android</h3>
+            <div className="badges"><a target="_blank" href='https://play.google.com/store/apps/details?id=beacon.dubai.bytesflow.ibseize&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' className="badge" src='./google.png'/></a>
+            <a target="_blank" href='https://apps.apple.com/us/app/id1469004837'><img className="badge" alt='Get it on App Store' src='./apple.png'/></a></div>
+            </div>}
           </div>
         </div>
       </div>
@@ -108,6 +113,7 @@ export default function Services() {
   return (
     <div className="services-container">
       <Servicecard
+      app={true}
         zag={true}
         class="ib"
         list={iBseize_list}
